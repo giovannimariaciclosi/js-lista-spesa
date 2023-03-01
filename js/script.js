@@ -36,13 +36,22 @@ const containerElement = document.getElementById("container");
 
 // provo a farlo con un ciclo while
 let contatore = 0;
+console.log(contatore);
 
-// while (listaSpesa.length ???) {
+// while (listaSpesa.length) {
 
-//   // contatore++;
+//   contatore++;
 
 //   let newListElement = document.createElement('li');
-//   // newListElement.innerText = listaSpesa[contatore];
+//   newListElement.innerText = listaSpesa[contatore];
 //   containerElement.append(newListElement);
   
 // }
+
+
+// provo con il ciclo do-while
+do {
+  let newListElement = document.createElement('li');
+  newListElement.innerText = listaSpesa[contatore];
+  containerElement.append(newListElement);
+} while (listaSpesa.length);
