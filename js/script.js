@@ -18,7 +18,7 @@ all'interno ciclo while
 
 const listaSpesa = ["latte", "cereali", "carne", "birra", "sigarette", "mele"];
 
-console.log(listaSpesa);
+// console.log(listaSpesa);
 
 const containerElement = document.getElementById("container");
 
@@ -40,14 +40,14 @@ let contatore = 0;
 
 // while (listaSpesa[contatore]) 
 
-while (contatore < listaSpesa.length -1) {
+while (contatore < listaSpesa.length) {
 
-  contatore++;
-
+  
   let newListElement = document.createElement('li');
   newListElement.innerText = listaSpesa[contatore];
   containerElement.append(newListElement);
   
+  contatore++;
 }
 
 console.log(listaSpesa);
