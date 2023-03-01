@@ -38,20 +38,20 @@ const containerElement = document.getElementById("container");
 let contatore = 0;
 console.log(contatore);
 
-// while (listaSpesa.length) {
+while (listaSpesa[contatore]) {
 
-//   contatore++;
+  contatore++;
 
-//   let newListElement = document.createElement('li');
-//   newListElement.innerText = listaSpesa[contatore];
-//   containerElement.append(newListElement);
-  
-// }
-
-
-// provo con il ciclo do-while
-do {
   let newListElement = document.createElement('li');
   newListElement.innerText = listaSpesa[contatore];
   containerElement.append(newListElement);
-} while (listaSpesa.length);
+  
+}
+
+
+// provo con il ciclo do-while
+// do {
+//   let newListElement = document.createElement('li');
+//   newListElement.innerText = listaSpesa[contatore];
+//   containerElement.append(newListElement);
+// } while (listaSpesa.length);
